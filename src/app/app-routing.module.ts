@@ -9,7 +9,7 @@ import { UsuarioComponent } from './usuario/usuario.component';
 const routes: Routes = [
   { path: 'home', component: HomeComponent},
   { path: 'usuario', component: UsuarioComponent},
-  { path: '', pathMatch: 'full', redirectTo: '/home'}
+  { path: '', pathMatch: 'full', redirectTo: '/home'},
 ];
 
 @NgModule({
@@ -17,7 +17,7 @@ const routes: Routes = [
   imports: [
     RouterModule.forRoot(routes)
   ],
-  exports: [RouterModule]
+  exports: [ RouterModule ]
 })
 
 
